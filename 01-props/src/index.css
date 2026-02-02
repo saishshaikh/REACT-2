@@ -1,0 +1,81 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.Box {
+  display: flex;
+}
+/* Card */
+.card {
+  width: 320px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px;   /* starts naturally from top */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+/* Image */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto 15px;
+  border: 3px solid #4f46e5;
+}
+
+/* Name */
+.card h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+/* Degree */
+.card p {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+/* Role */
+.card h4 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4f46e5;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.card button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 22px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button hover */
+.card button:hover {
+  background: #3730a3;
+}
