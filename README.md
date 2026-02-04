@@ -57,3 +57,4 @@ Answer: It works asynchronously; updates may not happen instantly.
 
 Q10. Is useState only for function or class components?
 Answer: Only for function components.
+

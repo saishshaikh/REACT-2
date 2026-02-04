@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.todo-container {
+  width: 360px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input section */
+input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #2575fc;
+}
+
+/* Add button */
+button {
+  padding: 10px 14px;
+  margin-left: 6px;
+  border: none;
+  background: #2575fc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d63d8;
+  transform: scale(1.05);
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+/* Task item */
+li {
+  background: #f3f4f6;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.4s ease;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px);
+  background: #e5e7eb;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Delete button */
+li button {
+  background: #ff4d4d;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+li button:hover {
+  background: #e63939;
+}
