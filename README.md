@@ -58,3 +58,44 @@ Answer: It works asynchronously; updates may not happen instantly.
 Q10. Is useState only for function or class components?
 Answer: Only for function components.
 
+
+
+##########################################  UseEffect  #########################################
+
+
+
+Q1. What is useEffect?
+It is a React hook used to handle side effects like API calls, timers, and DOM updates.
+
+Q2. When does useEffect run?
+It runs after the component renders.
+
+Q3. What is dependency array?
+It controls when the effect should run.
+
+Q4. What happens if dependency array is empty []?
+The effect runs only once when component loads.
+
+Q5. What if dependency array is not provided?
+The effect runs after every render.
+
+Q6. Can we update state inside useEffect?
+Yes, but it can cause infinite loop if not handled properly.
+
+Q7. What is cleanup function?
+A function returned inside useEffect to remove side effects.
+
+Q8. When does cleanup function run?
+When component unmounts or before effect runs again.
+
+Q9. Can we use multiple useEffect hooks?
+Yes, we can use multiple useEffect in one component.
+
+Q10. Why do we use useEffect?
+To handle side effects in React functional components.
+
+Q11. Where should API calls be made in React?
+Inside useEffect.
+
+Q12. Why does infinite loop happen in useEffect?
+When we update the same state that is in dependency array.
