@@ -103,3 +103,54 @@ Inside useEffect.
 
 Q12. Why does infinite loop happen in useEffect?
 When we update the same state that is in dependency array.
+
+
+###################### Router #################
+
+1. What is React Router?
+
+React Router is used to move between pages in a React app without reloading the page.
+
+
+2. Why do we use React Router?
+
+We use React Router to create single page applications and handle navigation on the client side.
+
+
+3. What is the difference between Link and <a> tag?
+Link changes the route without page reload, but <a> reloads the whole page.
+
+4. What is <BrowserRouter>?
+BrowserRouter is used to wrap the app and it uses normal URLs like /login.
+
+
+5. What are <Routes> and <Route>?
+
+They are used to define which component will load for a specific URL.
+
+
+6. What is useNavigate()?
+
+useNavigate() is used to redirect the user to another page using JavaScript.
+
+
+7. What is useParams()?
+
+useParams() is used to get values from the URL.
+
+Example: /user/5
+
+
+8. What is a Private Route?
+
+A private route allows only logged-in users to access a page.
+
+
+9. What is Nested Routing?
+
+Nested routing means routes inside another route.
+
+
+10. What is <Outlet>?
+
+Outlet is used to show the child route component inside the parent component.
